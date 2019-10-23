@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">NavigationDemo</string>
+    <string name="navigation_drawer_open">Apri menu laterale</string>
+    <string name="navigation_drawer_close">Chiudi menu laterale</string>
+    <string name="nav_header_title">AntVit Myapp</string>
+    <string name="nav_header_subtitle">antvit.myapp@android.com</string>
+    <string name="nav_header_desc">Menu laterale</string>
+    <string name="action_settings">Impostazioni</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Galleria</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_money_receiver">Scegli il destinatario</string>
+    <string name="money_amaount">Seleziona la cifra</string>
+    <string name="menu_send">Invia</string>
+    <string name="send_money">Invia denaro</string>
+    <string name="gallery">Galleria</string>
+    <string name="slideshow">Slideshow</string>
+    <string name="home_title">Sei nella Home</string>
+    <string name="send_title">Sei in Invia Denaro</string>
+    <string name="money_receiver_title">Sei in Scegli il Destinatario</string>
+    <string name="slideshow_title">Sei in Slideshow</string>
+    <string name="gallery_title">Sei nella Galleria</string>
+    <string name="amount_title">Sei in Seleziona la cifra</string>
+    <string name="money_receiver_name_helper">Nome destinatario</string>
+    <string name="money_receiver_name">Nome</string>
+    <string name="btn_next">Avanti</string>
+    <string name="amount_helper">0.00€</string>
+    <string name="money_amount_hint">Totale</string>
+    <string name="btn_cancel">Annulla</string>
+    <string name="btn_send">Invia</string>
+    <string name="send_to_name">Invia a: %s</string>
+    <string name="sending_confirmation_msg">Stai inviando %s€ a %s</string>
+    <string name="btn_confirm">Esegui</string>
+    <string name="sent_confirmation_msg">Operazione eseguita!</string>
+    <string name="btn_done">Ok</string>
+    <string name="sent_confirmation">Conferma invio denaro</string>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.ant.vit.myapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_gallery"
+            app:destination="@id/navGallery"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_nav_home_to_money_send"
+            app:destination="@id/nav_money_receiver"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_nav_home_to_slideshow"
+            app:destination="@id/navSlideshow"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navGallery"
+        android:name="com.ant.vit.myapp.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/navSlideshow"
+        android:name="com.ant.vit.myapp.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_money_receiver"
+        android:name="com.ant.vit.myapp.ui.receiver.MoneyReceiverFragment"
+        android:label="@string/menu_money_receiver"
+        tools:layout="@layout/fragment_money_receiver">
+        <action
+            android:id="@+id/action_nav_receiver_to_amount"
+            app:destination="@id/nav_money_amount" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_money_amount"
+        android:name="com.ant.vit.myapp.ui.amount.MoneyAmountFragment"
+        android:label="@string/money_amaount"
+        tools:layout="@layout/fragment_money_amount">
+        <action
+            android:id="@+id/action_nav_amount_to_money_send"
+            app:destination="@id/nav_sending_money" />
+        <action
+            android:id="@+id/action_nav_money_amount_to_home"
+            app:destination="@id/nav_home"
+            app:popUpTo="@id/nav_home"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="receiverName"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_sending_money"
+        android:name="com.ant.vit.myapp.ui.send.SendingMoneyFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send_money">
+        <action
+            android:id="@+id/action_nav_sending_money_to_home"
+            app:destination="@id/nav_home"
+            app:popUpTo="@id/nav_home"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_sending_money_to_money_sent"
+            app:destination="@+id/nav_money_sent" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_money_sent"
+        android:name="com.ant.vit.myapp.ui.done.MoneySentFragment"
+        android:label="@string/sent_confirmation"
+        tools:layout="@layout/fragment_money_sent">
+        <action
+            android:id="@+id/action_nav_money_sent_to_home"
+            app:destination="@id/nav_home"
+            app:popUpTo="@id/nav_home"
+            app:popUpToInclusive="true" />
+    </fragment><action android:id="@+id/action_global_nav_money_sent" app:destination="@id/nav_money_sent"/>
+
+</navigation>
