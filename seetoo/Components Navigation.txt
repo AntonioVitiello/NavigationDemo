@@ -1,0 +1,23 @@
+DOCS
+Dependencies:
+https://developer.android.com/jetpack/androidx/releases/navigation#declaring_dependencies
+
+Getting Started
+https://developer.android.com/guide/navigation/navigation-getting-started
+
+-----------------------------------------------------------------------------------------------------------
+VIDEO
+Storyboards for Android Studio:
+https://www.youtube.com/watch?v=GOpeBbfyb6s
+
+Navigation Component - Kotlin
+https://www.youtube.com/watch?v=0yH1qDxqZMo
+code:
+https://github.com/mitchtabian/Navigation-Components-Example
+
+Safe Args:
+https://www.youtube.com/watch?v=0yH1qDxqZMo
+code:
+https://github.com/ResoCoder/navigation-component-tutorial
+
+-----------------------------------------------------------------------------------------------------------
